@@ -1,0 +1,4 @@
+/nginx_conf
+/cache
+.DS_Store
+*.pyc
