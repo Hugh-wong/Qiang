@@ -172,6 +172,6 @@ class GenderEnum(BaseEnum):
 if __name__ == "__main__":
     print GenderEnum.male
     print GenderEnum.ENUM_CHOICES
-    print MntTypeEnum.display(2)
+    print GenderEnum.display(2)
 
 ```
