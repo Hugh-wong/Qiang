@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'齐德隆冬'
 SITENAME = u'呛呛呛'
-SITEURL = 'http://hugh-wong.github.io/'
+SITEURL = ''
 
 PATH = 'content'
 
@@ -36,5 +36,7 @@ AUTHOR_FEED_RSS = None
 DEFAULT_PAGINATION = 20
 
 DISPLAY_PAGES_ON_MENU = True
+
+DELETE_OUTPUT_DIRECTORY = True
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
