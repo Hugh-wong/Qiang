@@ -1,0 +1,6 @@
+[submodule "themes/Casper2Pelican"]
+	path = themes/Casper2Pelican
+	url = https://github.com/Hugh-wong/Casper2Pelican.git
+[submodule "hugh-wong.github.io"]
+	path = hugh-wong.github.io
+	url = https://github.com/Hugh-wong/hugh-wong.github.io.git
