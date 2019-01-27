@@ -35,9 +35,7 @@ html:
 start:
 	$(PELICAN) -l -o $(OUTPUTDIR)
 
-test:
-	html
-	start
+test: html start
 	
 clean:
 	[ ! -d $(OUTPUTDIR) ] || find $(OUTPUTDIR) ! -path "*.git" -delete
@@ -48,8 +46,9 @@ regenerate:
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
-github: publish
-	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
-	git push origin $(GITHUB_PAGES_BRANCH)
+github:
+	cd $(OUTPUTDIR) && git status
+	cd $(OUTPUTDIR) && git add . && git commit -m "update article" && git push origin master
+	
 
 .PHONY: html help clean regenerate publish github

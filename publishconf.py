@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://hugh-wong.github.io'
+SITEURL = 'https://hugh-wong.github.io'
 RELATIVE_URLS = False
 
 # Following items are often useful when publishing
